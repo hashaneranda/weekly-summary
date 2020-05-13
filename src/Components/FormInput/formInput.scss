@@ -1,0 +1,15 @@
+.formInput {
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336 !important;
+  }
+}
+
+// .datePicker {
+.MuiPickersBasePicker-container {
+  .MuiPickersToolbar-toolbar,
+  .MuiPickersDay-daySelected {
+    background-color: #004ba8;
+  }
+}
+
+// }

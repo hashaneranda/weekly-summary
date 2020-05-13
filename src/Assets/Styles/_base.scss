@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "lato";
+  src: url("../Fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "lato-bold";
+  src: url("../Fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../Fonts/Lato/Lato-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e8eef2;
+  color: #191919;
+  font-family: "lato";
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "lato-bold";
+}

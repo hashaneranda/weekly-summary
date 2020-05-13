@@ -1,0 +1,142 @@
+[
+  {
+    "recruitment": {
+      "existing": 6,
+      "registration": 20,
+      "new_code": 10
+    },
+    "quotations": {
+      "target": 25,
+      "actual": 22
+    },
+    "active_advisors": {
+      "target": 35,
+      "actual": 5
+    },
+    "pending_clearance": {
+      "proposals": 3,
+      "suspence": 250000,
+      "renewals": 120000,
+      "revivals": 25000
+    },
+    "meeting_notes": [
+      {
+        "data": "Recruitment program at school",
+        "status": null
+      },
+      {
+        "data": "Recruitment program at college",
+        "status": true
+      },
+      {
+        "data": "Recruitment program at park",
+        "status": false
+      }
+    ]
+  },
+  {
+    "recruitment": {
+      "existing": 16,
+      "registration": 13,
+      "new_code": 17
+    },
+    "quotations": {
+      "target": 25,
+      "actual": 16
+    },
+    "active_advisors": {
+      "target": 25,
+      "actual": 25
+    },
+    "pending_clearance": {
+      "proposals": 3,
+      "suspence": 250000,
+      "renewals": 120000,
+      "revivals": 25000
+    },
+    "meeting_notes": [
+      {
+        "data": "Recruitment program at school",
+        "status": null
+      },
+      {
+        "data": "Recruitment program at college",
+        "status": true
+      },
+      {
+        "data": "Recruitment program at park",
+        "status": false
+      }
+    ]
+  },
+  {
+    "recruitment": {
+      "existing": 16,
+      "registration": 13,
+      "new_code": 17
+    },
+    "quotations": {
+      "target": 25,
+      "actual": 16
+    },
+    "active_advisors": {
+      "target": 25,
+      "actual": 25
+    },
+    "pending_clearance": {
+      "proposals": 3,
+      "suspence": 250000,
+      "renewals": 120000,
+      "revivals": 25000
+    },
+    "meeting_notes": [
+      {
+        "data": "Recruitment program at school",
+        "status": null
+      },
+      {
+        "data": "Recruitment program at college",
+        "status": true
+      },
+      {
+        "data": "Recruitment program at park",
+        "status": false
+      }
+    ]
+  },
+  {
+    "recruitment": {
+      "existing": 16,
+      "registration": 13,
+      "new_code": 17
+    },
+    "quotations": {
+      "target": 25,
+      "actual": 16
+    },
+    "active_advisors": {
+      "target": 25,
+      "actual": 25
+    },
+    "pending_clearance": {
+      "proposals": 3,
+      "suspence": 250000,
+      "renewals": 120000,
+      "revivals": 25000
+    },
+    "meeting_notes": [
+      {
+        "data": "Recruitment program at school",
+        "status": null
+      },
+      {
+        "data": "Recruitment program at college",
+        "status": true
+      },
+      {
+        "data": "Recruitment program at park",
+        "status": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+.clearanceCard {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #ebf2fa;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+
+  width: 213px;
+  height: 166px;
+
+  padding: 20px 21px;
+
+  @media (max-width: 1024px) {
+    width: 173px;
+  }
+
+  @media (max-width: 768px) {
+    width: 123px;
+    height: 126px;
+  }
+
+  .cardLabel {
+    align-self: flex-start;
+    justify-self: flex-start;
+
+    p {
+      font-size: 16px;
+
+      // @media (max-width: 1024px) {
+      //   font-size: px;
+      // }
+    }
+  }
+  .cardValue {
+    align-self: flex-end;
+
+    h1 {
+      font-size: 40px;
+
+      @media (max-width: 1024px) {
+        font-size: 32px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
+    }
+  }
+}

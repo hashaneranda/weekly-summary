@@ -1,0 +1,175 @@
+$main-title: 28px;
+$main-heading: 18px;
+$sub-heading: 12px;
+
+.toggleBody {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+
+  margin-top: 40px;
+
+  padding: 40px 40px;
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 250px;
+
+    h1 {
+      font-size: $main-heading;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: $sub-heading;
+    }
+
+    @media (max-width: 1024px) {
+      text-align: center;
+
+      padding-bottom: 20px;
+    }
+  }
+
+  .containerData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    margin-left: 40px;
+
+    @media (max-width: 1024px) {
+      margin-left: 0;
+
+      .progressBar {
+        width: 100px;
+      }
+    }
+    @media (max-width: 670px) {
+      .progressBar {
+        width: 100px;
+      }
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 52px;
+
+    .btn {
+      width: 185px;
+      height: 50px;
+
+      margin-left: 18px;
+
+      @media (max-width: 768px) {
+        width: 95px;
+        height: 40px;
+      }
+
+      &.pending {
+        background: #ffffff !important;
+        border: 1px solid #ffc107 !important;
+        color: #ffc107 !important;
+
+        &:hover {
+          background: #ffc107 !important;
+          color: #ffffff !important;
+        }
+      }
+
+      &.absent {
+        background: #ffffff !important;
+        border: 1px solid #d05353 !important;
+        color: #d05353 !important;
+
+        &:hover {
+          background: #d05353 !important;
+          color: #ffffff !important;
+        }
+      }
+
+      &.complete {
+        background: #ffffff !important;
+        border: 1px solid #7ddf64 !important;
+        color: #7ddf64 !important;
+
+        &:hover {
+          background: #7ddf64 !important;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+
+  .recruitments,
+  .quotations {
+    position: relative;
+
+    .flotingBorder {
+      position: absolute;
+      border: 1px dashed #b5b5b5;
+      height: 0px;
+      width: calc(100% + 70px);
+      left: -35px;
+      bottom: -25px;
+    }
+  }
+
+  .cardDataContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-evenly;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .quotations {
+    margin-top: 52px;
+
+    &.mutiQuote {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .multiColumn {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .popupLabel {
+        margin-top: 30px;
+        color: #004ba8;
+        align-self: flex-end;
+
+        text-align: end;
+
+        &:hover {
+          transform: scale(1.015);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .advisors {
+    .containerData {
+      .cardData {
+        border: 1px solid #7ddf64;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+      }
+    }
+  }
+}

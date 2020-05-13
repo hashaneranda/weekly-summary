@@ -1,0 +1,41 @@
+.containerData {
+  .barchart {
+    @media (max-width: 768px) {
+      .recharts-wrapper {
+        transform: scale(0.7);
+      }
+    }
+  }
+
+  .summaryView {
+    width: 228px;
+    height: 232px;
+
+    padding: 27px 22px;
+
+    @media (max-width: 1024px) {
+      width: 178px;
+      padding: 27px 12px;
+    }
+
+    @media (max-width: 768px) {
+      width: 148px;
+      height: fit-content;
+      padding: 18px 8px;
+    }
+
+    .toDo {
+      p {
+        font-size: 12px;
+        line-height: 19px;
+      }
+
+      .logo {
+        width: 20px;
+        height: 20px;
+
+        margin: 0;
+      }
+    }
+  }
+}

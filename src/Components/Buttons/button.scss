@@ -1,0 +1,19 @@
+.outline-btn {
+  background: #ffffff !important;
+  border: 1px solid #d05353ff !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  color: #d05353ff !important;
+  text-transform: none !important;
+
+  -o-transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &:hover {
+    box-shadow: 0px 6px 16px rgba(250, 233, 227, 0.14) !important;
+    transform: scale(1.011);
+    opacity: 0.95;
+  }
+}

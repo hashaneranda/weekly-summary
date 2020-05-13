@@ -1,0 +1,76 @@
+$main-title: 28px;
+$main-heading: 18px;
+$sub-heading: 12px;
+
+.summaryHeader {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+
+  .subHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .userDetails {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      padding: 20px 0;
+
+      .userTab {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          font-size: $main-heading;
+          padding-bottom: 7px;
+        }
+
+        p {
+          font-size: $sub-heading;
+        }
+      }
+
+      .user {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #2ec4b6;
+
+        margin-right: 18px;
+      }
+    }
+
+    .tableFilter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .datePickerResults {
+        .MuiFormControl-root {
+          height: 39px;
+          width: 234px;
+
+          margin-left: 12px;
+          .MuiOutlinedInput-input {
+            padding: 10px 14px;
+            font-size: 14px;
+          }
+
+          @media (max-width: 768px) {
+            width: 134px;
+          }
+        }
+      }
+    }
+  }
+
+  .mainHeader {
+    font-size: $main-title;
+    color: #004ba8;
+  }
+}

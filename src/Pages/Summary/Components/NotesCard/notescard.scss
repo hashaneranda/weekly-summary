@@ -1,0 +1,71 @@
+.notesCard {
+  width: 528px;
+  height: 232px;
+
+  background: #ffffff;
+  border: 1px solid #ebf2fa;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+
+  padding: 37px 38px;
+
+  .toDo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+
+    p {
+      font-size: 16px;
+      line-height: 19px;
+
+      /* Dark 75% */
+
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    .logoContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      justify-content: flex-end;
+    }
+
+    .logo {
+      width: 29px;
+      height: 29px;
+
+      margin: 0 10px;
+
+      &.tick.done {
+        filter: sepia(27%) saturate(4296%) hue-rotate(41deg) brightness(100%)
+          contrast(99%);
+      }
+
+      &.cross.done {
+        filter: invert(40%) sepia(41%) saturate(957%) hue-rotate(313deg)
+          brightness(96%) contrast(85%);
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        transform: scale(1.005);
+
+        &.tick {
+          filter: sepia(27%) saturate(4296%) hue-rotate(41deg) brightness(100%)
+            contrast(99%);
+        }
+
+        &.cross {
+          filter: invert(40%) sepia(41%) saturate(957%) hue-rotate(313deg)
+            brightness(96%) contrast(85%);
+        }
+      }
+    }
+  }
+}

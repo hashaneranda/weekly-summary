@@ -1,0 +1,118 @@
+$main-title: 28px;
+$main-heading: 18px;
+$sub-heading: 12px;
+
+.appContainer {
+  padding: 40px 80px;
+
+  .summaryContainer {
+    // width: 75vw;
+    // height: fit-content;
+
+    .summaryBody {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      .toggleHeader {
+        padding-top: 30px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .balloon {
+          position: relative;
+          background: #fff;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          border: 1px solid #eae7e7;
+          box-sizing: border-box;
+          width: 236px;
+          height: 58px;
+
+          margin-right: 18px;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-size: 16px;
+            line-height: 304.3%;
+            color: #979797;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+
+          &.active {
+            background: #004ba8;
+
+            h1 {
+              color: #ffffff;
+            }
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
+
+          -o-transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          -webkit-transition: transform 0.3s
+            cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          -moz-transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+          &:hover {
+            box-shadow: 0px 6px 16px rgba(250, 233, 227, 0.14) !important;
+            transform: scale(1.011);
+            cursor: pointer;
+            // opacity: 0.95;
+          }
+        }
+
+        .balloon.active::before {
+          content: "";
+          position: absolute;
+          bottom: -23px;
+          left: 45%;
+          z-index: 1;
+          border: solid 15px transparent;
+          border-top-color: #004ba8;
+        }
+      }
+    }
+  }
+}
+
+.modalContainer {
+  background: #ffffff;
+  border-radius: 4px;
+
+  padding: 20px 40px;
+  padding-top: 50px;
+
+  min-width: 497px;
+  min-height: 520px;
+
+  animation: slide-up 0.3s ease-in;
+
+  //   transition: all 0.6 ease-in;
+
+  .headerModal {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #000000;
+
+    margin-bottom: 60px;
+    // margin-top: 20px;
+  }
+}

@@ -1,0 +1,158 @@
+$main-title: 28px;
+$main-heading: 18px;
+$sub-heading: 12px;
+
+.cardData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  background: #ffffff;
+  border: 1px solid #ebf2fa;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+
+  padding: 30px 21px;
+
+  width: 287px;
+  height: 173px;
+
+  .cardImage {
+    width: 45px;
+    height: 45px;
+
+    // margin-left: 18px;
+
+    padding: 12px;
+
+    border-radius: 50%;
+    background: #c8e0ff;
+  }
+
+  .cardDataDetails {
+    padding-left: 29px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .mainData {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 20px;
+
+      padding-top: 8px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (max-width: 1380px) {
+    // max-width: 300px;
+
+    .cardImage {
+      width: 25px;
+      height: 25px;
+
+      margin-left: 28px;
+
+      padding: 8px;
+    }
+
+    .cardDataDetails {
+      padding-left: 29px;
+
+      .mainData {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 20px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 1224px) {
+    flex-direction: column;
+
+    width: 227px;
+    height: 173px;
+
+    .cardImage {
+      margin-left: 0;
+
+      padding: 8px;
+    }
+
+    .cardDataDetails {
+      padding-left: 0;
+
+      align-items: center;
+
+      .mainData {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 20px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 162px;
+    height: 173px;
+
+    padding: 20px 12px;
+
+    .cardImage {
+      margin-left: 0;
+
+      padding: 8px;
+    }
+
+    .cardDataDetails {
+      padding-left: 0;
+
+      align-items: center;
+
+      .mainData {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 20px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-left: 0;
+
+    &.recruitBox {
+      width: 100px;
+      height: 120px;
+    }
+
+    .cardImage {
+      display: none;
+    }
+
+    .cardDataDetails {
+      text-align: center;
+
+      .mainData {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: $sub-heading;
+      }
+    }
+  }
+}
