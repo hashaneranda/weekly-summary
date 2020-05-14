@@ -20,6 +20,15 @@ $sub-heading: 12px;
     height: 194px;
   }
 
+  @media (max-width: 480px) {
+    width: 286px;
+    height: 194px;
+  }
+
+  @media (max-width: 320px) {
+    width: 226px;
+  }
+
   .progressBar {
     width: 120px;
 

@@ -10,6 +10,10 @@
 
   padding: 37px 38px;
 
+  @media (max-width: 480px) {
+    padding: 17px 12px;
+  }
+
   .toDo {
     display: flex;
     flex-direction: row;

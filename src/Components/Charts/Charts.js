@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import {
   BarChart,
   Bar,
-  Cell,
+  ResponsiveContainer,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -128,44 +128,46 @@ export const BarChartComponent = ({
 
   return (
     <div className={`barchart ${className}`}>
-      <BarChart
-        width={800}
-        height={300}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis hide />
-        <Tooltip content={<CustomTooltip />} />
-        <Legend />
-        <Bar
-          dataKey="recruitment"
-          fill="#004ba8"
-          onMouseOver={() => (tooltip = "mt")}
-        />
-        <Bar
-          dataKey="quotations"
-          fill="#7ddf64ff"
-          onMouseOver={() => (tooltip = "pv")}
-        />
-        <Bar
-          dataKey="active_advisors"
-          fill="#FFC107"
-          onMouseOver={() => (tooltip = "amt")}
-          // data={}
-        />
-        <Bar
-          dataKey="pending_clearance"
-          fill="#d05353ff"
-          onMouseOver={() => (tooltip = "uv")}
-        />
-      </BarChart>
+      <ResponsiveContainer width="95%" height="95%">
+        <BarChart
+          // width={800}
+          // height={300}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis hide />
+          <Tooltip content={<CustomTooltip />} />
+          <Legend />
+          <Bar
+            dataKey="recruitment"
+            fill="#004ba8"
+            onMouseOver={() => (tooltip = "mt")}
+          />
+          <Bar
+            dataKey="quotations"
+            fill="#7ddf64ff"
+            onMouseOver={() => (tooltip = "pv")}
+          />
+          <Bar
+            dataKey="active_advisors"
+            fill="#FFC107"
+            onMouseOver={() => (tooltip = "amt")}
+            // data={}
+          />
+          <Bar
+            dataKey="pending_clearance"
+            fill="#d05353ff"
+            onMouseOver={() => (tooltip = "uv")}
+          />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 };

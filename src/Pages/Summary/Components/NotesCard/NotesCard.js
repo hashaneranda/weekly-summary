@@ -20,8 +20,8 @@ import { ProgressBar } from "../../../../Components/Charts";
 const NotesCard = ({ notesData = [], className = "" }) => {
   return (
     <div className={`notesCard ${className}`}>
-      {notesData.map((data) => (
-        <div className="toDo">
+      {notesData.map((data, index) => (
+        <div key={index} className="toDo">
           <p>{data.data}</p>
           <div>
             {data.status === true ? (

@@ -1,13 +1,10 @@
 /**
  * Author : Hashan Eranda Jayalath
- * Copyrights: Veracity dev
+ * Copyrights: Hashan Eranda Jayalath
  * Version:
  * Description: Action type definitions
- * Date: 02-04-2020
+ * Date: 12-06-2020
  */
 
-//file create
-// export const CREATE_FILE = "CREATE_FILE";
-// export const CREATE_FILE_SUCCESS = "CREATE_FILE_SUCCESS";
-// export const CREATE_FILE_ERROR = "CREATE_FILE_ERROR";
-// export const CREATE_FILE_CLEAR = "CREATE_FILE_CLEAR";
+//menue
+export const MENU_TOGGLE = "MENU_TOGGLE";

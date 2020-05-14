@@ -8,9 +8,9 @@
 
 import * as types from "../../Store/ActionTypes";
 
-// export const createFileAction = (payload) => {
-//   return {
-//     type: types.CREATE_FILE,
-//     payload,
-//   };
-// };
+export const toggleMenuAction = (response) => {
+  return {
+    type: types.MENU_TOGGLE,
+    response,
+  };
+};

@@ -9,6 +9,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { connect } from "react-redux";
 
+//redux actions
+import { toggleMenuAction } from "../../Redux/Summary/SummaryAction";
+
 //styles
 import "./summary.scss";
 
@@ -35,14 +38,18 @@ const Summary = (props) => {
       <div className="summaryContainer">
         <Header />
         <div className="summaryBody">
-          <div className="toggleHeader">
+          <div className={`toggleHeader ${props.menuToggle ? "toggle" : ""}`}>
             {props.weeklySummary
               ? props.weeklySummary.map((data, index) => (
                   <div
+                    key={index}
                     className={`balloon  ${
                       compareToggle === index + 1 ? "active" : ""
                     }`}
-                    onClick={() => setCompareToggle(index + 1)}
+                    onClick={() => {
+                      setCompareToggle(index + 1);
+                      props.toggleMenuAction(false);
+                    }}
                   >
                     <h1>Week {index + 1}</h1>
                   </div>
@@ -51,7 +58,10 @@ const Summary = (props) => {
 
             <div
               className={`balloon  ${compareToggle === 5 ? "active" : ""}`}
-              onClick={() => setCompareToggle(5)}
+              onClick={() => {
+                setCompareToggle(5);
+                props.toggleMenuAction(false);
+              }}
             >
               <h1>Summary</h1>
             </div>
@@ -82,11 +92,13 @@ const Summary = (props) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     // dispatching plain actions
+    toggleMenuAction: (data) => dispatch(toggleMenuAction(data)),
   };
 };
 
 const mapStateToProps = (response) => ({
   weeklySummary: response.summary.weeklySummary,
+  menuToggle: response.summary.menuToggle,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Summary);

@@ -12,21 +12,18 @@ import SummaryData from "../../SummaryData.json";
 
 const initailState = {
   weeklySummary: SummaryData,
+  menuToggle: false,
 };
 
 export default function (state = initailState, action) {
   let response = action.response;
 
   switch (action.type) {
-    // case types.CREATE_FILE_SUCCESS:
-    //   return {
-    //     ...state,
-    //     createdFile: {
-    //       ...state.createdFile,
-    //       status: response.status,
-    //       data: response.data,
-    //     },
-    //   };
+    case types.MENU_TOGGLE:
+      return {
+        ...state,
+        menuToggle: response,
+      };
 
     default:
       return state;

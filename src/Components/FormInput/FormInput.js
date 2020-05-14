@@ -170,3 +170,24 @@ export const DatePicker = ({
     </MuiPickersUtilsProvider>
   );
 };
+
+/**
+ *Check box component
+ *
+ * @param {*} { className, ...props }
+ * @returns ChechBox component
+ */
+export const CheckBox = ({ formLabel = "", className = "", ...props }) => {
+  return (
+    <FormControlLabel
+      control={
+        <Checkbox
+          color="primary"
+          className={`checkBox ${className}`}
+          {...props}
+        />
+      }
+      label={formLabel}
+    />
+  );
+};

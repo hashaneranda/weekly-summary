@@ -55,8 +55,9 @@ const WeekCard = ({ compareToggle = null, ...props }) => {
             </div>
             <div className="containerData">
               {props.weeklySummary.length > 0
-                ? props.weeklySummary.map((data) => (
+                ? props.weeklySummary.map((data, index) => (
                     <NotesCard
+                      key={index}
                       className="summaryView"
                       notesData={data.meeting_notes}
                     />

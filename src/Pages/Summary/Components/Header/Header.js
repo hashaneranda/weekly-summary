@@ -9,6 +9,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { connect } from "react-redux";
 
+//redux actions
+import { toggleMenuAction } from "../../../../Redux/Summary/SummaryAction";
+
 //context
 import { Context as UserContext } from "../../../../Context/UserContext";
 
@@ -16,10 +19,10 @@ import { Context as UserContext } from "../../../../Context/UserContext";
 import "./header.scss";
 
 //component
-import { DatePicker } from "../../../../Components/FormInput";
+import { DatePicker, CheckBox } from "../../../../Components/FormInput";
 
 //assets
-import { user } from "../../../../Config/Images";
+import { user, bars } from "../../../../Config/Images";
 
 const Header = (props) => {
   //context
@@ -42,7 +45,19 @@ const Header = (props) => {
           </div>
         </div>
 
-        <div className="tableFilter">
+        <div className={`menuToggle ${props.menuToggle ? "toggle" : ""}`}>
+          <input
+            type="checkbox"
+            value={props.menuToggle}
+            onClick={() => props.toggleMenuAction(!props.menuToggle)}
+          />
+          <span></span>
+          <span></span>
+          <span></span>
+          <div className="menu"></div>
+        </div>
+
+        <div className={`tableFilter ${props.menuToggle ? "toggle" : ""}`}>
           <div className="datePickerResults">
             <DatePicker
               value={fromDate}
@@ -67,8 +82,16 @@ const Header = (props) => {
   );
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // dispatching plain actions
+    toggleMenuAction: (data) => dispatch(toggleMenuAction(data)),
+  };
+};
+
 const mapStateToProps = (response) => ({
   weeklySummary: response.summary.weeklySummary,
+  menuToggle: response.summary.menuToggle,
 });
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

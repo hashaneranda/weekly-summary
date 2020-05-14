@@ -1,9 +1,26 @@
 .containerData {
   .barchart {
+    width: 800px;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @media (max-width: 768px) {
-      .recharts-wrapper {
-        transform: scale(0.7);
-      }
+    }
+
+    @media (max-width: 600px) {
+    }
+
+    @media (max-width: 480px) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 320px) {
+      // width: 400px;
+      height: 340px;
     }
   }
 
@@ -22,6 +39,10 @@
       width: 148px;
       height: fit-content;
       padding: 18px 8px;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 10px;
     }
 
     .toDo {

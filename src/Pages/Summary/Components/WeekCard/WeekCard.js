@@ -176,6 +176,7 @@ const WeekCard = ({ compareToggle = 0, toggleMore = () => {}, ...props }) => {
 
 const mapStateToProps = (response) => ({
   weeklySummary: response.summary.weeklySummary,
+  menuToggle: response.summary.menuToggle,
 });
 
 export default connect(mapStateToProps)(WeekCard);

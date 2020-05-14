@@ -3,6 +3,7 @@ export const closeBtn = require("../Assets/Images/closeBtn.svg");
 
 //header
 export const user = require("../Assets/Images/user.svg");
+export const bars = require("../Assets/Images/bars.svg");
 
 //recruits
 export const existing = require("../Assets/Images/existing.svg");

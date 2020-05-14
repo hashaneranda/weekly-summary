@@ -38,6 +38,7 @@ $sub-heading: 12px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
 
     margin-left: 40px;
@@ -73,6 +74,10 @@ $sub-heading: 12px;
       @media (max-width: 768px) {
         width: 95px;
         height: 40px;
+      }
+
+      @media (max-width: 600px) {
+        margin-top: 10px;
       }
 
       &.pending {
@@ -142,6 +147,13 @@ $sub-heading: 12px;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      @media (max-width: 600px) {
+        .cardDataContainer {
+          margin-top: 20px;
+        }
+      }
     }
 
     .multiColumn {
