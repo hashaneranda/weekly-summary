@@ -129,6 +129,12 @@ $sub-heading: 12px;
               color: #004ba8;
             }
 
+            &.active {
+              h1 {
+                color: #ffffff;
+              }
+            }
+
             // opacity: 0.95;
           }
         }
